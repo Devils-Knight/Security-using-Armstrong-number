@@ -2,16 +2,16 @@
 This project is based on creating an Encrypting and Decrypting algorithm using armstrong number and mapping color's rgb into matrix <br>
 Along with this there is also implementation of
 - Multithreading(threads, join, daemon)
-- File handlinig(open, seek file pointer, chunking)
+- File handling(open, seek file pointer, chunking)
 - Abstract base class 
 
 ## Implementaion
-For faster Encryption and Decryption file chunking and threading is done on the target file.<br>
+For faster Encryption and Decryption file chunking and threading is done on the target file.<br><br>
 ![image](implementation_approach.png)<br>
 ###  Encryption process :
-1. Take the file(any) which needs to be Encrypted
+1. Take the file(_any_) which needs to be Encrypted
 2. File is divided into 4 chunks, each chunk undergo encryption at the same time using threading
-3. Numeric key is created using _Armstrong_ number and the _Passphrase_ given by user for encryption.
+3. Numeric key is created using **Armstrong** number and the **Passphrase** given by user for encryption.
 4. Creating a rgb color with Numeric key, And maping(r,g,b) it into _16x16_ matrix.
 5. Encryption process is divided into 2 steps:
     * Encrypting every byte of data by taking XOR with the nummeric key 
@@ -28,8 +28,8 @@ For faster Encryption and Decryption file chunking and threading is done on the 
     * Which then is Decrypted by taking XOR with the nummeric key.     
 6. Repeating the above process for every byte and then storing them into a file.
 7. After the process is completed the original file will be retrieved.
-<br>
-#### The Complexity for both the processes is O(n) and with threading, this is a very fast and secure process.<br><br>
+
+> The Complexity for both the processes is O(n) and with threading, this is a very fast and secure process.<br>
 
 # Thank you  
 
